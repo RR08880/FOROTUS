@@ -43,3 +43,16 @@ version 15.0 – Версия ОС
 #### [Подключение к инт. fa06](Podcfa06)
 
 **Интерфейс в работе, протокол канального уровня в работе, согласован Full-duplex, 100Mb/s**
+
+**Содержимое флеш-каталога:**
+
+Switch#sh flash
+
+Directory of flash:/
+
+1 -rw- 4670455 <no date> 2960-lanbasek9-mz.150-2.SE4.bin
+
+64016384 bytes total (59345929 bytes free)
+
+**Имя образа:**
+  2960-lanbasek9-mz.150-2.SE4.bin
