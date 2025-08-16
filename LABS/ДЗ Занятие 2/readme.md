@@ -61,3 +61,50 @@ Directory of flash:/
 
 #### [Подкдючение по Telnet и конфиг](ConfTelnet)
 ### Часть 3. Проверка сетевых подключений
+**Настройки на PC-A:**
+
+C:\>ipconfig
+
+FastEthernet0 Connection:(default port)
+
+   Connection-specific DNS Suffix..:
+   
+   Link-local IPv6 Address.........: FE80::20C:85FF:FE57:A145
+   
+   IPv6 Address....................: ::
+   
+   IPv4 Address....................: 192.168.1.10
+   
+   Subnet Mask.....................: 255.255.255.0
+   
+   Default Gateway.................: ::
+   
+                                     0.0.0.0
+
+Bluetooth Connection:
+
+   Connection-specific DNS Suffix..: 
+   
+   Link-local IPv6 Address.........: ::
+   
+   IPv6 Address....................: ::
+   
+   IPv4 Address....................: 0.0.0.0
+   
+   Subnet Mask.....................: 0.0.0.0
+   
+   Default Gateway.................: ::
+   
+                                     0.0.0.0
+
+**Проверка сетевой связанности на коммутаторе S1:**
+
+S1#ping 192.168.1.2
+
+Type escape sequence to abort.
+
+Sending 5, 100-byte ICMP Echos to 192.168.1.2, timeout is 2 seconds:
+
+!!!!!
+
+Success rate is 100 percent (5/5), round-trip min/avg/max = 0/3/5 ms
