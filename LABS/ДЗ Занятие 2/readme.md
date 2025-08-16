@@ -104,12 +104,12 @@ Bluetooth Connection:
 
 **Проверка сетевой связанности на коммутаторе S1:**
 
-S1#ping 192.168.1.2
+S1#ping 192.168.1.10
 
 Type escape sequence to abort.
 
-Sending 5, 100-byte ICMP Echos to 192.168.1.2, timeout is 2 seconds:
+Sending 5, 100-byte ICMP Echos to 192.168.1.10, timeout is 2 seconds:
 
 !!!!!
 
-Success rate is 100 percent (5/5), round-trip min/avg/max = 0/3/5 ms
+Success rate is 100 percent (5/5), round-trip min/avg/max = 0/0/1 ms
