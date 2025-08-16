@@ -37,3 +37,5 @@ no ip address
 shutdown
 
 version 15.0 – Версия ОС
+##### Топология 2:
+![](Top2.jpg)
