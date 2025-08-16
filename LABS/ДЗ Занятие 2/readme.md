@@ -16,16 +16,24 @@
 ##### Топология 1:
 ![](Top1.jpg)
 #### [1 Настройки коммутатора по умолчанию](def1)
-##### **24 порта FastEthernet**
-##### **2 порта GigabitEthernet**
-##### **Диапазоны vty: 0-4 и 5-15**
-##### **Т.к. еще не сохранен running config:**
-#####   Switch# sh startup-config 
-#####   startup-config is not present
+**24 порта FastEthernet**
 
-#####   **SVI для VLAN1 не настроен:**
-#####   interface Vlan1
-#####   no ip address
-#####   shutdown
+**2 порта GigabitEthernet**
 
-#####   version 15.0 – Версия ОС
+**Диапазоны vty: 0-4 и 5-15**
+
+**Т.к. еще не сохранен running config:**
+
+Switch# sh startup-config 
+
+startup-config is not present
+
+**SVI для VLAN1 не настроен:**
+
+interface Vlan1
+
+no ip address
+
+shutdown
+
+version 15.0 – Версия ОС
