@@ -74,3 +74,5 @@ Hardware is CPU Interface, address is 0060.7005.a107 (bia 0060.7005.a107)
   * 192.168.1.1           000c.8557.a145        dynamic
   * 192.168.1.11          0004.9ade.29b3        dynamic
   * 192.168.1.12          0060.7005.a107        dynamic
+#### Выполнение команд на S1:
+##### S1#sh mac address-table
