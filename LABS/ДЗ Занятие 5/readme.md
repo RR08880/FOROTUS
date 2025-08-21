@@ -19,3 +19,21 @@
 
 #### [Конфигурация коммутатора S1](startconfS1)
 #### [Конфигурация коммутатора S2](startconfS2)
+# Часть 2 Изучение таблицы МАС-адресов коммутатора
+## ШАГ 1
+#### Выполнение команды ipconfig/all на PC-A и PC-B:
+* MAC-адрес компьютера PC-A: 000C.8557.A145
+* MAC-адрес компьютера PC-B: 00D0.9771.E788
+## ШАГ 2
+#### Выполнение команды: S1#sh int f0/1
+Hardware is Lance, address is 0004.9aa7.7001 (bia 0004.9aa7.7001)
+##### МАС-адрес порта Fast Ethernet 0/1 коммутатора S1: 0004.9aa7.7001
+#### Выполнение команды: S1# sh int vlan 1
+Hardware is CPU Interface, address is 0004.9ade.29b3 (bia 0004.9ade.29b3)
+##### МАС-адрес коммутатора S1: 0004.9ade.29b3
+#### Выполнение команды: S2#sh int f0/1
+Hardware is Lance, address is 0060.5cd5.ee01 (bia 0060.5cd5.ee01)
+##### МАС-адрес порта Fast Ethernet 0/1 коммутатора S2: 0060.5cd5.ee01
+#### Выполнение команды: S2# sh int vlan 1
+Hardware is CPU Interface, address is 0060.7005.a107 (bia 0060.7005.a107)
+##### МАС-адрес коммутатора S2: 0060.7005.a107
