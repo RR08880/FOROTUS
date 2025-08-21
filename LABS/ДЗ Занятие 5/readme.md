@@ -37,3 +37,7 @@ Hardware is Lance, address is 0060.5cd5.ee01 (bia 0060.5cd5.ee01)
 #### Выполнение команды: S2# sh int vlan 1
 Hardware is CPU Interface, address is 0060.7005.a107 (bia 0060.7005.a107)
 ##### МАС-адрес коммутатора S2: 0060.7005.a107
+#### Выполнение команды S1#sh mac address-table:
+| Vlan | Mac Address | Type | Ports |
+| :---- | :----------- | :-------- | :----- |
+| 1 | 0060.5cd5.ee01 | DYNAMIC | Fa0/1 |
