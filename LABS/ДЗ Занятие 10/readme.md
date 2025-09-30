@@ -23,3 +23,5 @@
 * Building configuration...
 * [OK]
 * R1(config)#
+#### Выполнение команды R1#sh run
+#### [Конфигурация коммутатора R1](ConfR1)
