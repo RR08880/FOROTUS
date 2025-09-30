@@ -64,3 +64,10 @@
 * GigabitEthernet0/0/1 is administratively down, line protocol is down (disabled)
 * Hardware is ISR4331-3x1GE, address is 0001.c754.3a02 (bia 0001.c754.3a02)
 #### Отображаемые локальные адреса канала основаны на адресации EUI-64, которая автоматически использует MAC-адрес интерфейса для создания 128-битного локального IPv6-адреса канала.
+#### c.	Чтобы обеспечить соответствие локальных адресов канала индивидуальному адресу, вручную введите локальные адреса канала на каждом интерфейсе Ethernet на R1.
+#### Выполнение команд на R1:
+* R1(config)#int gi0/0/1
+* R1(config-if)#ipv6 add fe80::1 link-local
+
+* R1(config-if)#int gi0/0/0
+* R1(config-if)#ipv6 add fe80::1 link-local
