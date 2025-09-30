@@ -63,3 +63,4 @@
 #### Выполнение команды R1(config-if)#do sh int gi0/0/1 на R1:
 * GigabitEthernet0/0/1 is administratively down, line protocol is down (disabled)
 * Hardware is ISR4331-3x1GE, address is 0001.c754.3a02 (bia 0001.c754.3a02)
+#### Отображаемые локальные адреса канала основаны на адресации EUI-64, которая автоматически использует MAC-адрес интерфейса для создания 128-битного локального IPv6-адреса канала.
