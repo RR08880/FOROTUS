@@ -96,3 +96,5 @@
 * no ip address
 * ipv6 address FE80::B link-local
 * ipv6 address 2001:DB8:ACAD:1::B/64
+#### b.	Проверьте правильность назначения IPv6-адресов интерфейсу управления с помощью команды show ipv6 interface vlan1.
+#### [Результат выполнения команды sh ipv6 interface vlan 1 на S1](Rez6)
