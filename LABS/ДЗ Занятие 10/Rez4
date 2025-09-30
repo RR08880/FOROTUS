@@ -1,1 +1,16 @@
+FastEthernet0 Connection:(default port)
+
+   Connection-specific DNS Suffix..: 
+   Physical Address................: 0030.A376.280C
+   Link-local IPv6 Address.........: FE80::230:A3FF:FE76:280C
+   IPv6 Address....................: ::
+   IPv4 Address....................: 0.0.0.0
+   Subnet Mask.....................: 0.0.0.0
+   Default Gateway.................: ::
+                                     0.0.0.0
+   DHCP Servers....................: 0.0.0.0
+   DHCPv6 IAID.....................: 
+   DHCPv6 Client DUID..............: 00-01-00-01-83-42-21-A0-00-30-A3-76-28-0C
+   DNS Servers.....................: ::
+                                     0.0.0.0
 
