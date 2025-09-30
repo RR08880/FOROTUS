@@ -25,3 +25,13 @@
 * R1(config)#
 #### Выполнение команды R1#sh run
 #### [Конфигурация коммутатора R1](ConfR1)
+### Шаг 2. Настройка коммутатора.
+#### Назначение имени хоста и настройка основных параметров устройства.
+#### Выполнение команд на коммутаторе:
+* Switch(config)#hostname S1
+* S1(config)#
+* S1(config)#no ip domain-lookup
+* S1(config)#do wr
+* Building configuration...
+* [OK]
+* S1(config)#
