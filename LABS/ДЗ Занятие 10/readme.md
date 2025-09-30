@@ -15,10 +15,11 @@
 ## Настройка топологии и конфигурация основных параметров маршрутизатора и коммутатора
 ### Шаг 1. Настройка маршрутизатора.
 #### Назначить имя хоста и настройте основные параметры устройства.
-Router(config)#hos
-Router(config)#hostname R1
-R1(config)#no ip domain-lookup
-R1(config)#do wr
-Building configuration...
-[OK]
-R1(config)#
+#### Выполнение команд на маршрутизаторе:
+* Router(config)#hos
+* Router(config)#hostname R1
+* R1(config)#no ip domain-lookup
+* R1(config)#do wr
+* Building configuration...
+* [OK]
+* R1(config)#
