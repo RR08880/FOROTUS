@@ -71,3 +71,4 @@
 
 * R1(config-if)#int gi0/0/0
 * R1(config-if)#ipv6 add fe80::1 link-local
+#### Проверка. Выполнение команды R1(config)#do sh ipv6 int br:
