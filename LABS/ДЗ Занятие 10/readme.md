@@ -73,3 +73,4 @@
 * R1(config-if)#ipv6 add fe80::1 link-local
 #### Проверка. Выполнение команды R1(config)#do sh ipv6 int br:
 #### [Результат на R1](Rez2)
+### Адреса изменены.
