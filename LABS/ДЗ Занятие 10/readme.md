@@ -57,4 +57,9 @@
 *    unassigned
 * Vlan1                      [administratively down/down]
 *    unassigned
-
+#### Выполнение команды R1(config-if)#do sh int gi0/0/0 на R1:
+* GigabitEthernet0/0/0 is administratively down, line protocol is down (disabled)
+* Hardware is ISR4331-3x1GE, address is 0001.c754.3a01 (bia 0001.c754.3a01)
+#### Выполнение команды R1(config-if)#do sh int gi0/0/1 на R1:
+* GigabitEthernet0/0/1 is administratively down, line protocol is down (disabled)
+* Hardware is ISR4331-3x1GE, address is 0001.c754.3a02 (bia 0001.c754.3a02)
