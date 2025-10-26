@@ -1,0 +1,9 @@
+FastEthernet0 Connection:(default port)
+
+   Connection-specific DNS Suffix..: 
+   Link-local IPv6 Address.........: FE80::201:63FF:FEB7:3AE1
+   IPv6 Address....................: ::
+   IPv4 Address....................: 192.168.1.3
+   Subnet Mask.....................: 255.255.255.0
+   Default Gateway.................: ::
+                                     192.168.1.1
