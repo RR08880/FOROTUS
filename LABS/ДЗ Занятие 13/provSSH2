@@ -1,0 +1,11 @@
+C:\>ssh -l admin 192.168.1.11
+
+Password: 
+
+ Unauthorized access is strictly prohibited. 
+
+S1>en
+Password: 
+S1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#
