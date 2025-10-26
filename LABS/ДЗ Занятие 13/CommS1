@@ -13,6 +13,7 @@ S1(config-line)#login
 S1(config)#int vlan1
 S1(config-if)#ip add 192.168.1.11 255.255.255.0
 
+S1(config)#ip domain name otus
 S1(config)#crypto key generate rsa general-keys
 The name for the keys will be: S1.otus
 Choose the size of the key modulus in the range of 360 to 2048 for your
