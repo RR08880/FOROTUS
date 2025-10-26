@@ -28,10 +28,10 @@
 ### Часть 4. Настройка протокола SSH с использованием интерфейса командной строки (CLI) коммутатора
 #### ШАГ 1. Доступные парметры клиента SSH  в Cisco IOS на коммутаторе S1
 ##### Выполнение команды S1#ssh ?
-####    -l  Log in using this user name
-####    -v  Specify SSH Protocol Version 
+######    -l  Log in using this user name
+######    -v  Specify SSH Protocol Version 
 #### Шаг 2. Установка с коммутатора S1 соединение с маршрутизатором R1 по протоколу SSH.
-#### S1#ssh -l admin 192.168.1.1
-#### Password: 
-#### Unauthorized access is strictly prohibited. 
-#### R1>
+##### S1#ssh -l admin 192.168.1.1
+###### Password: 
+###### Unauthorized access is strictly prohibited. 
+###### R1>
