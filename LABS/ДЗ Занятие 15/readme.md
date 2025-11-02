@@ -32,7 +32,7 @@
 ##### S1(config-if)#switchport acc vlan 20
 ##### S1(config-if)#do wr
 ### Выполнение команд на S2:
-S2(config-if-range)#int f0/18
-S2(config-if)#sw mo acc
-S2(config-if)#sw acc vlan 30
-S2(config-if)#do wr
+##### S2(config-if-range)#int f0/18
+##### S2(config-if)#sw mo acc
+##### S2(config-if)#sw acc vlan 30
+##### S2(config-if)#do wr
