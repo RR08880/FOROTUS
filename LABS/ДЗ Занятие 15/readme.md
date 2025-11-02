@@ -45,3 +45,9 @@
 #### [Поверка командой sh vlan br на S2](S2shvlanbr1)
 #### [Поверка командой sh int f0/1 sw на S2](S2shinsw1)
 ### Шаг 2. Вручную настройте магистральный интерфейс F0/5 на коммутаторе S1.
+#### Выполнение команд:
+##### S1(config)#int f0/5
+##### S1(config-if)#sw mo tr
+##### S1(config-if)#sw tr allowed vlan 10,20,30
+##### S1(config-if)#sw tr native vlan 1000
+#### [Поверка командой sh int f0/5 sw на S1](S1shinsw2)
