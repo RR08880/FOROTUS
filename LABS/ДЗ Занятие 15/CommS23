@@ -1,1 +1,6 @@
-
+S2(config-if)#int f0/1
+S2(config-if)#sw mode tr
+S2(config-if)#sw tr native vlan 1000
+S2(config-if)#sw trunk allowed vlan 10,20,30
+S2(config)#vlan 1000
+S2(config-vlan)#ex
