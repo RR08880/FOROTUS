@@ -26,12 +26,12 @@
 #### [Выполнение комманд на S1.](CommS12)
 #### [Выполнение комманд на S2.](CommS22)
 ### Шаг 2. Назначьте сети VLAN соответствующим интерфейсам коммутатора.
-### Выполнение команд на S1:
+#### Выполнение команд на S1:
 ##### S1(config)#int f0/6
 ##### S1(config-if)#switchport mode access 
 ##### S1(config-if)#switchport acc vlan 20
 ##### S1(config-if)#do wr
-### Выполнение команд на S2:
+#### Выполнение команд на S2:
 ##### S2(config-if-range)#int f0/18
 ##### S2(config-if)#sw mo acc
 ##### S2(config-if)#sw acc vlan 30
