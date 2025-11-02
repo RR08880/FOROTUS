@@ -41,3 +41,5 @@
 #### [Настройки trunk для S1](CommS13)
 #### [Настройки trunk для S2](CommS23)
 #### [Поверка командой sh vlan br на S1](S1shvlanbr1)
+#### [Поверка командой sh int f0/1 sw на S1](S1 shinsw1)
+
