@@ -1,1 +1,22 @@
+S2#conf t
+Enter configuration commands, one per line. End with CNTL/Z.
+S2(config)#int vlan 10
+S2(config-if)#ip add 192.168.10.12 255.255.255.0
+S2(config-if)#vlan 10
+S2(config-vlan)#
+%LINK-5-CHANGED: Interface Vlan10, changed state to up
+
+S2(config-vlan)#name CONTROL
+S2(config-vlan)#vlan 20
+S2(config-vlan)#name SALES
+S2(config-vlan)#vlan 30
+S2(config-vlan)#name OPER
+S2(config-vlan)#vlan 999
+S2(config-vlan)#name PARKING
+S2(config-vlan)#ex
+S2(config)#ip default-gateway 192.168.10.1
+S2(config)#int range f0/2-17, f0/19-24, g0/1-2
+S2(config-if-range)#switchport mode access 
+S2(config-if-range)#switchport access vlan 999
+S2(config-if-range)#shut
 
