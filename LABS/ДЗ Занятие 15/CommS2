@@ -1,1 +1,25 @@
-
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line. End with CNTL/Z.
+Switch(config)#host S2
+S2(config)#no ip domain-lookup 
+S2(config)#service password-encryption 
+S2(config)#enable secret class
+S2(config)#banner motd * Unauthorized access is strictly prohibited. *
+S2(config)#line con 0
+S2(config-line)#pass cisco
+S2(config-line)#login
+S2(config-line)#line vty 0 15
+S2(config-line)#pass cisco
+S2(config-line)#login
+S2(config-line)#end
+S2#
+%SYS-5-CONFIG_I: Configured from console by console
+S2#wr
+Building configuration...
+[OK]
+S2#clock set 16:37:00 nov 2 2025
+S2#wr
+Building configuration...
+[OK]
+S2#
