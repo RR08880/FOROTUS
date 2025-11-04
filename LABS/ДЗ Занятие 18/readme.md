@@ -49,4 +49,4 @@
 ### Шаг 2:	Измените стоимость порта.
 #### Выполнение команд на S1:
 ##### S1(config)#int f0/4
-#####S1(config-if)#spanning-tree vlan 1 cost 18
+##### S1(config-if)#spanning-tree vlan 1 cost 18
