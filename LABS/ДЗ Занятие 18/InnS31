@@ -1,0 +1,22 @@
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line. End with CNTL/Z.
+Switch(config)#hostname S3
+S3(config)#no ip domain-lookup 
+S3(config)#service password-encryption 
+S3(config)#enable secret class
+S3(config)#banner motd * Unauthorized access is strictly prohibited. *
+S3(config)#line con 0
+S3(config-line)#logging synchronous 
+S3(config-line)#password cisco
+S3(config-line)#login
+S3(config-line)#line vty 0 15
+S3(config-line)#password cisco
+S3(config-line)#login
+S3(config-line)#end
+S3#
+%SYS-5-CONFIG_I: Configured from console by console
+S3#wr
+Building configuration...
+[OK]
+S3#
