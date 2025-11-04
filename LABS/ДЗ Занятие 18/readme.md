@@ -50,6 +50,7 @@
 #### Выполнение команд на S1:
 ##### S1(config)#int f0/4
 ##### S1(config-if)#spanning-tree vlan 1 cost 18
+### Шаг 3:	Просмотрите изменения протокола spanning-tree.
 #### Результат выполнения sh spanning-tree для S1 и S2, заблокированный порт на стороне S2 - F0/2:
 #### [Для S1](ShowSTPS12)
 #### [Для S2](ShowSTPS22)
