@@ -7,6 +7,7 @@ S1(config)#service password-encryption
 S1(config)#enable secret class
 S1(config)#banner motd * Unauthorized access is strictly prohibited. *
 S1(config)#line con 0
+S1(config-line)#logging synchronous 
 S1(config-line)#password cisco
 S1(config-line)#login
 S1(config-line)#line vty 0 15
