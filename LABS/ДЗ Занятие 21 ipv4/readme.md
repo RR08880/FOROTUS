@@ -31,7 +31,7 @@
 #####      Sending 5, 100-byte ICMP Echos to 192.168.1.97, timeout is 2 seconds:
 #####      !!!!!
 #####      Success rate is 100 percent (5/5), round-trip min/avg/max = 0/0/3 ms
-##### R2б проверка доступности IP-адреса на порту G0/0/1.200 маршрутизатора R1:
+##### R2, проверка доступности IP-адреса на порту G0/0/1.200 маршрутизатора R1:
 ##### R2#ping 192.168.1.65
 ##### Type escape sequence to abort.
 ##### Sending 5, 100-byte ICMP Echos to 192.168.1.65, timeout is 2 seconds:
