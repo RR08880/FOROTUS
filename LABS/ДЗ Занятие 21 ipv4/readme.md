@@ -63,4 +63,4 @@
 ###### S1(config-if)#sw mo tr
 ###### S1(config-if)#sw tr allowed vlan 100,200
 ###### S1(config-if)#sw tr native vlan 1000
-#### [Прооверка настроек для порта S1 F0/5](S1shintf0/5sw)
+#### [Прооверка настроек для порта S1 F0/5](S1provf05)
