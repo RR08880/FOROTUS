@@ -76,3 +76,8 @@
 ###### network 192.168.1.0 255.255.255.192
 ###### default-router 192.168.1.1
 ###### domain-name CCNA-lab.com
+#### Настройка пула R2-Client-LAN:
+###### ip dhcp pool R2-Client-LAN
+###### network 192.168.1.96 255.255.255.240
+###### default-router 192.168.1.97
+###### domain-name CCNA-lab.com
