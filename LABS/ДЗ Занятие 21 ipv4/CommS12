@@ -1,0 +1,21 @@
+S1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 100
+S1(config-vlan)#name USERS
+S1(config-vlan)#vlan 200
+S1(config-vlan)#name MGMT
+S1(config-vlan)#vlan 999
+S1(config-vlan)#name PARKING
+S1(config-vlan)#vlan 1000
+S1(config-vlan)#name NATIVE
+S1(config-vlan)#int vlan 200
+S1(config-if)#
+%LINK-5-CHANGED: Interface Vlan200, changed state to up
+S1(config-if)#ip add 192.168.1.66 255.255.255.224
+S1(config-if)#en
+% Ambiguous command: "en"
+S1(config)#ip default-gateway 192.168.1.65
+S1(config)#int ra f0/1-4, f0/7-24, g0/1-2
+S1(config-if-range)#sw mo access 
+S1(config-if-range)#sw acc vlan 999
+S1(config-if-range)#shut
