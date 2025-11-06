@@ -48,10 +48,10 @@
 ##### [Команды на коммутаторе S2](CommS22)
 ### Шаг 8.	Назначьте сети VLAN соответствующим интерфейсам коммутатора.
 #### Порт Fa0/6 на S1 в access:
-####### S1(config-if)#int f0/6
-####### S1(config-if)#sw mo acc
-####### S1(config-if)#sw acc vlan 100
-####### S1(config-if)#do wr
+###### S1(config-if)#int f0/6
+###### S1(config-if)#sw mo acc
+###### S1(config-if)#sw acc vlan 100
+###### S1(config-if)#do wr
 #### Интерфейсы Fa0/5 и Fa0/18 на S2 в access:
 ###### S2(config-if-range)#int ra f0/18, f0/5
 ###### S2(config-if-range)#sw mo acc
