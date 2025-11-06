@@ -1,0 +1,13 @@
+S2#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S2(config)#int vlan 1
+S2(config-if)#ip add 192.168.1.98 255.255.255.240
+S2(config-if)#end
+S2#
+%SYS-5-CONFIG_I: Configured from console by console
+S2#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S2(config)#ip default-gateway 192.168.1.97
+S2(config)#in ra f0/1-4, f0/6-17, f0/19-24, g0/1-2
+S2(config-if-range)#sw mo acc
+S2(config-if-range)#sh
