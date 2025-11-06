@@ -87,3 +87,5 @@
 #### [sh ip dhcp pool](R1pools)
 #### Результат выполнения команды sh ip dhcp binding на R1 (уже проведена проверка выдачи IP-адреса для PC-A на следующем шаге):
 #### [Результат](R1shipdhcpbinding1)
+### Шаг 4.	Попытка получить IP-адрес от DHCP на PC-A
+![](PC-Aipconfig1.png)
