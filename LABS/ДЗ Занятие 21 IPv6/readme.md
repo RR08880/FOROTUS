@@ -49,7 +49,13 @@
 #### Проверка получения настроенных параметров на PC-A, результат выполнения команды ipconfig /all:
 ![](ProvPCA2.png)
 ##### Проверка доступности инт. G0/0/1 на R2 с ПК PC-A, выполнение команды ping:
-
+![](ProvPCA3.png)
 ## Часть 4. Настройка сервера DHCPv6 с сохранением состояния на R2 (т.к. в CPT не работает ретрансляция DHCP запросов для IPv6)
 #### Настройка DHCP пула для варианта DHCP сервера с сохранением состояния, выполнение команд на R2:
-
+###### R2(config)# ipv6 dhcp pool R2-STATEFUL
+###### R2(config-dhcp)# address prefix 2001:db8:acad:3:aaa::/80
+###### R2(config-dhcp)# dns-server 2001:db8:acad::254
+###### R2(config-dhcp)# domain-name STATEFUL.com
+#### Назначение только что созданного пула DHCPv6 интерфейсу g0/0/1 на R2.
+###### R2(config)# interface g0/0/1
+###### R2(config-if)# ipv6 dhcp server R2-STATEFUL
