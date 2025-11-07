@@ -25,7 +25,7 @@
 ###### Success rate is 100 percent (5/5), round-trip min/avg/max = 0/0/0 ms
 ## Часть 2. Проверка назначения адреса SLAAC от R1
 #### Включение маршрутизации IPv6 на обоих маршрутизаторов командой ipv6 unicast-routing
-Результат выполнения команды ipconfig /all на ПК PC-A:
+##### Результат выполнения команды ipconfig /all на ПК PC-A:
 ![](ProvPCA1.png)
 ### Откуда взялась часть адреса с идентификатором хоста?
 #### Ответ: была сгенерирована автоматически на основе MAC адреса интерфейса.
@@ -34,3 +34,17 @@
 ![](ProvPCA1.png)
 ##### DNS-суффикс и адрес DNS сераера отсутствуют, т.к. отстуствуют соответствующие настройки на R1, выступающего в роли источника.
 ### Шаг 2. Настройте R1 для предоставления DHCPv6 без состояния для PC-A.
+#### Настройка DNS-суффикса и адреса DNS сервера в пуле R1-STATELESS на маршрктизаторе R1, выступающего в роли DHCP сервера. Выполнение команд:
+###### R1(config)#ipv6 dhcp pool R1-STATELESS
+###### R1(config-dhcpv6)#dns-server 2001:db8:acad::254
+###### R1(config-dhcpv6)#domain-name STATELESS.com
+###### R1(config-dhcpv6)#end
+###### R1#
+###### %SYS-5-CONFIG_I: Configured from console by console
+###### R1#conf t
+###### Enter configuration commands, one per line.  End with CNTL/Z.
+###### R1(config)#int g0/0/1
+###### R1(config-if)#ipv6 nd other-config-flag
+###### R1(config-if)#ipv6 dhcp server R1-STATELESS
+#### Проверка получения настроенных параметров на PC-A, результат выполнения команды ipconfig /all:
+![](ProvPCA2.png)
