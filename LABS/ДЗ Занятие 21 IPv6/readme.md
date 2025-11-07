@@ -23,3 +23,4 @@
 ###### Sending 5, 100-byte ICMP Echos to 2001:db8:acad:3::1, timeout is 2 seconds:
 ###### !!!!!
 ###### Success rate is 100 percent (5/5), round-trip min/avg/max = 0/0/0 ms
+## Часть 2. Проверка назначения адреса SLAAC от R1
