@@ -59,3 +59,6 @@
 #### Назначение только что созданного пула DHCPv6 интерфейсу g0/0/1 на R2.
 ###### R2(config)# interface g0/0/1
 ###### R2(config-if)# ipv6 dhcp server R2-STATEFUL
+###### R2(config-if)#ipv6 nd managed-config-flag
+### Проверка созданных настроек выполнением команды ipconfig /all на PC-B:
+![](ProvPCB1.png)
