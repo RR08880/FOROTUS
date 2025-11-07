@@ -1,0 +1,17 @@
+R2#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#int g0/0/0
+R2(config-if)#ipv6 add 2001:db8:acad:2::2/64
+R2(config-if)#ipv6 add fe80::1 link-local 
+R2(config-if)#int g0/0/1
+R2(config-if)#ipv6 add 2001:db8:acad:3::1/64
+R2(config-if)#ipv6 add fe80::1 link-local 
+R2(config-if)#end
+R2#
+%SYS-5-CONFIG_I: Configured from console by console
+R2#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#ipv6 route 0::/0 2001:db8:acad:2::1
+R2(config)#do wr
+Building configuration...
+[OK]
