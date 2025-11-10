@@ -88,3 +88,5 @@
 ##### Появляется сообщение о необходимости настройки этого параметра на всех маршрутизаторах в едином домене OSPF:
 ###### % OSPF: Reference bandwidth is changed. Please ensure reference bandwidth is consistent across all routers.
 ##### После выполнения команды перезапуска OSPF  соседские значения устанавливаются снова.
+### Шаг 2. Убедитесь, что оптимизация OSPFv2 реализовалась.
+#### a. Выполнение команды show ip ospf interface g0/0/1 на R1:
