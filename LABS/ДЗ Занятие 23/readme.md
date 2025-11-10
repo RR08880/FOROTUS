@@ -96,4 +96,4 @@
 ###### S2(config-if)#ip dhcp snooping trust 
 ###### S2(config-if)#int f0/18
 ###### S2(config-if)#ip dhcp snooping limit rate 5
-#### [Результат выполнения команды show port-security interface f0/18 на S2 после выполненных настроек безопасности порта для интерфейса F0/18](ShPSIntS22)
+#### [Результат выполнения команды sh ip dhcp snooping на S2 после выполненных настроек безопасности](ShIpDSS2)
