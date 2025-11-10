@@ -1,0 +1,11 @@
+S2#show spanning-tree interface f0/18 detail
+
+Port 18 (FastEthernet0/18) of VLAN0010 is designated forwarding
+  Port path cost 19, Port priority 128, Port Identifier 128.18
+  Designated root has priority 32778, address 000A.F379.4DD3
+  Designated bridge has priority 32778, address 000A.F379.4DD3
+  Designated port id is 128.18, designated path cost 19
+  Timers: message age 16, forward delay 0, hold 0
+  Number of transitions to forwarding state: 1
+  The port is in the portfast mode
+  Link type is point-to-point by default
