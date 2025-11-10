@@ -55,3 +55,6 @@
 ###### S2(config-if)#sw tr native vlan 333
 ##### [Результат выполнения команды S1#show interface trunk](ShIntTrS1)
 ##### [Результат выполнения команды S2#show interface trunk](ShIntTrS2)
+#### Отключение согласовния DTP на порту F0/1 для коммутаторов S1 и S2. Выполнение команды sw nonegotiate в режиме конфигурации порта F0/1.
+#### [Результат выполнения команды sh int f0/1 sw для S1](ShIntSwS1)
+#### [Результат выполнения команды sh int f0/1 sw для S2](ShIntSwS2)
