@@ -72,8 +72,8 @@
 #### a. Таблица настроек по умолчанию для порта F0/6 коммутатора S1:
 ![](TabDefS1.png)
 #### b.	На S1 включите защиту порта на F0 / 6 со следующими настройками: (S1(config)#int f0/6, S1(config-if)#sw port-security)
-#### o	Максимальное количество записей MAC-адресов: 3 (S1(config-if)#sw port-security maximum 3)
-#### o	Режим безопасности: restrict (S1(config-if)#sw port-security violation restrict )
-#### o	Aging time: 60 мин. (S1(config-if)#sw port-security aging time 60)
-#### o	Aging type: неактивный (не поддерживается в CPT)
+#### o	Максимальное количество записей MAC-адресов: 3  (S1(config-if)#sw port-security maximum 3)
+#### o	Режим безопасности: restrict                    (S1(config-if)#sw port-security violation restrict )
+#### o	Aging time: 60 мин.                             (S1(config-if)#sw port-security aging time 60)
+#### o	Aging type: неактивный                          (не поддерживается в CPT)
 #### [Результат выполнения команды show port-security interface f0/6 на S1 после выполненных настроек безопасности порта для интерфейса F0/6](ShPSIntS12)
