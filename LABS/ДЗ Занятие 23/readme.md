@@ -85,5 +85,6 @@
 ###### S2(config-if)#sw port-security maximum 2
 ###### S2(config-if)#sw port-security violation pro
 ###### S2(config-if)#sw port-security aging time 60
+#### f. Проверка функции безопасности порта F0/18
 #### [Результат выполнения команды show port-security interface f0/18 на S2 после выполненных настроек безопасности порта для интерфейса F0/18](ShPSIntS22)
-ShPSIntS22
+
