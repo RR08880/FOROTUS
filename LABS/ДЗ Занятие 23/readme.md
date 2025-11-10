@@ -97,3 +97,6 @@
 ###### S2(config-if)#int f0/18
 ###### S2(config-if)#ip dhcp snooping limit rate 5
 #### [Результат выполнения команды sh ip dhcp snooping на S2 после выполненных настроек безопасности](ShIpDSS2)
+
+#### [Результат выполнения команды sh ip dhcp snooping binding на S2 после запроса IP-адреса от DHCP на ПК PC-B](ShIpDSBS1)
+ShIpDSBS1
