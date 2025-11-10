@@ -28,5 +28,5 @@
 #### a.	Загрузите следующий конфигурационный скрипт на R1.
 #### [Конфигурационный скрипт для R1](ConfigR1)
 #### Отдельно добавляем настройку командой: R1(config)#ip dhcp relay information trust-all,
-#### т.к. в CPT не работет настройка R1(config)#ip dhcp relay information trust-all для конкретного интерфейса.
+#### т.к. в CPT не работет настройка ip dhcp relay information trusted для конкретного интерфейса.
 #### [Проверка текущей конфигурации на R1  командой: R1# show ip interface brief](ShIpIntBr)
