@@ -1,0 +1,7 @@
+R1(config-line)#do sh ip int br
+Interface              IP-Address      OK? Method Status                Protocol 
+GigabitEthernet0/0/0   unassigned      YES unset  administratively down down 
+GigabitEthernet0/0/1   192.168.10.1    YES manual up                    up 
+Loopback0              10.10.1.1       YES manual up                    up 
+Vlan1                  unassigned      YES unset  administratively down down
+R1(config-line)#
