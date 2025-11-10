@@ -76,4 +76,14 @@
 #### o	Режим безопасности: restrict                    (S1(config-if)#sw port-security violation restrict )
 #### o	Aging time: 60 мин.                             (S1(config-if)#sw port-security aging time 60)
 #### o	Aging type: неактивный                          (не поддерживается в CPT)
+#### c. Проверка настроек:
 #### [Результат выполнения команды show port-security interface f0/6 на S1 после выполненных настроек безопасности порта для интерфейса F0/6](ShPSIntS12)
+#### d, e Включение безопасности порта F0/18 на коммутаторе S2, выполнение команд:
+###### S2(config)#int f0/18
+###### S2(config-if)#sw port-security 
+###### S2(config-if)#sw port-security mac-address sticky 
+###### S2(config-if)#sw port-security maximum 2
+###### S2(config-if)#sw port-security violation pro
+###### S2(config-if)#sw port-security aging time 60
+#### [Результат выполнения команды show port-security interface f0/18 на S2 после выполненных настроек безопасности порта для интерфейса F0/18](ShPSIntS22)
+ShPSIntS22
