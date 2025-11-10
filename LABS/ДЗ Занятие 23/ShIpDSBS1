@@ -1,0 +1,5 @@
+S2#sh ip dhcp snooping binding 
+MacAddress          IpAddress        Lease(sec)  Type           VLAN  Interface
+------------------  ---------------  ----------  -------------  ----  -----------------
+00:01:97:27:E3:10   192.168.10.10    0           dhcp-snooping  10    FastEthernet0/18
+Total number of bindings: 1
