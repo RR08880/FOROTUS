@@ -102,4 +102,8 @@
 ###### C:\Users\Student> ipconfig /renew
 #### Проверка привязки отслеживания DHCP с помощью команды show ip dhcp snooping binding:
 #### [Результат выполнения команды sh ip dhcp snooping binding на S2 после запроса IP-адреса от DHCP на ПК PC-B](ShIpDSBS1)
+### Шаг 6. Реализация PortFast и BPDU Guard
+#### Включение PortFast на всех используемых портах доступа командой spanning-tree portfast на обоих коммутаторах
+#### Включение защиты BPDU на портах доступа VLAN 10 S1 и S2, подключенных к PC-A и PC-B командой spanning-tree bpduguard enable
+#### Проверка результата выполненых настроек, на примере коммутатора S2:
 
