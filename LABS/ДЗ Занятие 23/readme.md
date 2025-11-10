@@ -97,6 +97,9 @@
 ###### S2(config-if)#int f0/18
 ###### S2(config-if)#ip dhcp snooping limit rate 5
 #### [Результат выполнения команды sh ip dhcp snooping на S2 после выполненных настроек безопасности](ShIpDSS2)
-
+#### В командной строке на PC-B освободите, а затем обновите IP-адрес.
+###### C:\Users\Student> ipconfig /release
+###### C:\Users\Student> ipconfig /renew
+#### Проверка привязки отслеживания DHCP с помощью команды show ip dhcp snooping binding:
 #### [Результат выполнения команды sh ip dhcp snooping binding на S2 после запроса IP-адреса от DHCP на ПК PC-B](ShIpDSBS1)
-ShIpDSBS1
+
