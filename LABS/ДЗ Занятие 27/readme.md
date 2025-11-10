@@ -84,7 +84,7 @@
 ##### f.	Измените базовую пропускную способность для маршрутизаторов. После этой настройки перезапустите OSPF с помощью команды clear ip ospf process . Обратите внимание на сообщение консоли после установки новой опорной полосы пропускания.
 ##### Выыполнение команд на маршрутизаторах:
 ###### R1(config)#router ospf 56
-###### R1(config-router)#auto-cost reference-bandwidth 1000
+###### R1(config-router)#auto-cost reference-bandwidth 10000
 ##### Появляется сообщение о необходимости настройки этого параметра на всех маршрутизаторах в едином домене OSPF:
 ###### % OSPF: Reference bandwidth is changed. Please ensure reference bandwidth is consistent across all routers.
 ##### После выполнения команды перезапуска OSPF  соседские значения устанавливаются снова.
