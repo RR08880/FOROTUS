@@ -30,3 +30,4 @@
 #### Отдельно добавляем настройку командой: R1(config)#ip dhcp relay information trust-all,
 #### т.к. в CPT не работет настройка ip dhcp relay information trusted для конкретного интерфейса.
 #### [Проверка текущей конфигурации на R1  командой: R1# show ip interface brief](ShIpIntBr)
+### Шаг 3. Настройка и проверка основных параметров коммутатора
