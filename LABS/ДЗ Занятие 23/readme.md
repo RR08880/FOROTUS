@@ -68,4 +68,4 @@
 #### [Результат выполнения команды S1# show interfaces status:](ShIntStatS1)
 #### [Результат выполнения команды S2# show interfaces status:](ShIntStatS2)
 ### Шаг 4. Документирование и реализация функций безопасности порта.
-#### [Результат выполнения команды show port-security interface f0/6 на S1](ShPSIntS1)
+#### [Результат выполнения команды show port-security interface f0/6 на S1 для отображения настроек по умолчанию безопасности порта для интерфейса F0/6](ShPSIntS1)
