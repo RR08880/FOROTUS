@@ -88,3 +88,12 @@
 #### f. Проверка функции безопасности порта F0/18
 #### [Результат выполнения команды show port-security interface f0/18 на S2 после выполненных настроек безопасности порта для интерфейса F0/18](ShPSIntS22)
 #### [Результат выполнения команды show port-security address на S2 после выполненных настроек безопасности порта для интерфейса F0/18](ShPSAdS2)
+### Шаг 5. Реализовать безопасность DHCP snooping.
+#### Выполнение командв на коммутаторе S2:
+###### S2(config)#ip dhcp snooping 
+###### S2(config)#ip dhcp snooping vlan 10
+###### S2(config)#int f0/1
+###### S2(config-if)#ip dhcp snooping trust 
+###### S2(config-if)#int f0/18
+###### S2(config-if)#ip dhcp snooping limit rate 5
+#### [Результат выполнения команды show port-security interface f0/18 на S2 после выполненных настроек безопасности порта для интерфейса F0/18](ShPSIntS22)
