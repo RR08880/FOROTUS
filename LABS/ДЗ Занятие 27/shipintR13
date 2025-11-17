@@ -6,7 +6,7 @@ GigabitEthernet0/0/1 is up, line protocol is up
   Transmit Delay is 1 sec, State BDR, Priority 1
   Designated Router (ID) 1.1.1.1, Interface address 10.53.0.1
   Backup Designated Router (ID) 2.2.2.2, Interface address 10.53.0.2
-  Timer intervals configured, Hello 30, Dead 40, Wait 40, Retransmit 5
+  Timer intervals configured, Hello 30, Dead 120, Wait 120, Retransmit 5
     Hello due in 00:00:12
   Index 2/2, flood queue length 0
   Next 0x0(0)/0x0(0)
