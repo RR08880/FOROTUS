@@ -1,0 +1,91 @@
+R1#sh run
+Building configuration...
+Current configuration : 1559 bytes
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname R1
+!
+enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
+!
+ip cef
+no ipv6 cef
+!
+username SSHadmin secret 5 $1$mERr$jnsDknF4Wwkgx2tzKw49w1
+!
+ip ssh version 2
+no ip domain-lookup
+ip domain-name ccna-lab.com
+!
+spanning-tree mode pvst
+!
+interface GigabitEthernet0/0/0
+ description DGW SRV1
+ ip address 172.16.1.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1.20
+ description DGW VLAN 20
+ encapsulation dot1Q 20
+ ip address 10.20.0.1 255.255.255.0
+!
+interface GigabitEthernet0/0/1.30
+ description DGW VLAN 30
+ encapsulation dot1Q 30
+ ip address 10.30.0.1 255.255.255.0
+!
+interface GigabitEthernet0/0/1.40
+ description DGW VLAN 40
+ encapsulation dot1Q 40
+ ip address 10.40.0.1 255.255.255.0
+!
+interface GigabitEthernet0/0/1.1000
+ encapsulation dot1Q 1000 native
+ no ip address
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+!
+ip flow-export version 9
+!
+no cdp run
+!
+banner motd ^C Unauthorized access is strictly prohibited. ^C
+!
+line con 0
+ password 7 0822455D0A16
+ login
+!
+line aux 0
+!
+line vty 0 4
+ password 7 0822455D0A16
+ login local
+ transport input ssh
+line vty 5
+ password 7 0822455D0A16
+ login local
+ transport input ssh
+line vty 6 15
+ password 7 0822455D0A16
+ login
+!
+end
