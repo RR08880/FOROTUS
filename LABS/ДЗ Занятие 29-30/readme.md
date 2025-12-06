@@ -126,3 +126,4 @@
 ###### Extended IP access list DENY_OPERATIONS
 ###### 10 deny icmp 10.30.0.0 0.0.0.255 10.40.0.0 0.0.0.255 echo (4 match(es))
 ###### 20 permit ip any any (8 match(es))
+#### [Итоговая конфигурация R1](endconfR1)
