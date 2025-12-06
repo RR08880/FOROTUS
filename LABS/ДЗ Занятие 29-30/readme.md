@@ -117,12 +117,12 @@
 ##### Итоговые ACL на R1:
 ###### R1#sh access-lists 
 ###### Extended IP access list DENY_SALES
-    ###### 10 deny tcp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 eq 22 (33 match(es))
-    ###### 20 deny tcp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 eq www (12 match(es))
-    ###### 30 deny tcp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 eq 443
-    ###### 32 deny icmp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 echo (4 match(es))
-    ###### 34 deny icmp 10.40.0.0 0.0.0.255 10.30.0.0 0.0.0.255 echo (4 match(es))
-    ###### 40 permit ip any any (103 match(es))
+###### 10 deny tcp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 eq 22 (33 match(es))
+###### 20 deny tcp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 eq www (12 match(es))
+###### 30 deny tcp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 eq 443
+###### 32 deny icmp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 echo (4 match(es))
+###### 34 deny icmp 10.40.0.0 0.0.0.255 10.30.0.0 0.0.0.255 echo (4 match(es))
+###### 40 permit ip any any (103 match(es))
 ###### Extended IP access list DENY_OPERATIONS
-    ###### 10 deny icmp 10.30.0.0 0.0.0.255 10.40.0.0 0.0.0.255 echo (4 match(es))
-    ###### 20 permit ip any any (8 match(es))
+###### 10 deny icmp 10.30.0.0 0.0.0.255 10.40.0.0 0.0.0.255 echo (4 match(es))
+###### 20 permit ip any any (8 match(es))
