@@ -126,4 +126,37 @@
 ###### Extended IP access list DENY_OPERATIONS
 ###### 10 deny icmp 10.30.0.0 0.0.0.255 10.40.0.0 0.0.0.255 echo (4 match(es))
 ###### 20 permit ip any any (8 match(es))
+### Политика 5. Реализация и проверка.
+##### Для выполнения задания в части 2 политики №2: "Сеть Sales также не имеет доступа к интерфейсам R1 с помощью любого веб-протокола. Разрешён весь другой веб-трафик (обратите внимание — Сеть Sales  может получить доступ к интерфейсу Loopback 1 на R1)", т.к. в CPT отсутствует возможность развернуть HTTP/HTTPS сервер на маршрутизаторе R1 предлагаю другую формулировку: Сеть Operations не имеет доступа к интерфейсам R1 с помощью протокола SSH. Разрешён весь другой SSH-трафик (обратите внимание — Сеть Operations  может получить доступ к интерфейсу Loopback 1 на R1)".
+##### Т.е. необходимо закрыть доступ по TCP порту 22, а не по портам 80 и 443 как в задании с web-трафиком. SSH-сервер на R1 развернут ранее.
+##### Выполняем настройку loopback интерфейса на R1 (IP-адрес для Lo 1: 10.10.10.1/24):
+###### R1(config)#int lo 1
+###### R1(config-if)#ip add 10.10.10.1 255.255.255.0
+###### ip add 10.10.10.1 255.255.255.0
+##### Далее на R1 редактируем ACL DENY_OPERATIONS:
+###### R1(config)#ip access-list extended DENY_OPERATIONS
+###### R1(config-ext-nacl)# no 20
+###### R1(config-ext-nacl)#20 deny tcp 10.30.0.0 0.0.0.255 host 10.20.0.1 eq 22
+###### R1(config-ext-nacl)#30 deny tcp 10.30.0.0 0.0.0.255 host 10.30.0.1 eq 22
+###### R1(config-ext-nacl)#40 deny tcp 10.30.0.0 0.0.0.255 host 10.40.0.1 eq 22
+###### R1(config-ext-nacl)#50 deny tcp 10.30.0.0 0.0.0.255 host 172.16.1.1 eq 22
+###### R1(config-ext-nacl)#permit ip any any
+##### Вывод информации об ACL на R1:
+###### R1(config-ext-nacl)#do sh access-list
+###### Extended IP access list DENY_SALES
+######     10 deny tcp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 eq 22
+######     20 deny tcp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 eq www
+######     30 deny tcp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 eq 443
+######     40 deny icmp 10.40.0.0 0.0.0.255 10.20.0.0 0.0.0.255 echo
+######     50 deny icmp 10.40.0.0 0.0.0.255 10.30.0.0 0.0.0.255 echo
+######     60 permit ip any any
+###### Extended IP access list DENY_OPERATIONS
+######     10 deny icmp 10.30.0.0 0.0.0.255 10.40.0.0 0.0.0.255 echo
+######     20 deny tcp 10.30.0.0 0.0.0.255 host 10.20.0.1 eq 22
+######     30 deny tcp 10.30.0.0 0.0.0.255 host 10.30.0.1 eq 22
+######     40 deny tcp 10.30.0.0 0.0.0.255 host 10.40.0.1 eq 22
+######     50 deny tcp 10.30.0.0 0.0.0.255 host 172.16.1.1 eq 22
+######     60 permit ip any any
+
+R1(config-ext-nacl)#do wr
 #### [Итоговая конфигурация R1](endconfR1)
