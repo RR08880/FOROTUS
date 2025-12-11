@@ -23,6 +23,9 @@ ip domain-name ccna-lab.com
 !
 spanning-tree mode pvst
 !
+interface Loopback1
+ ip address 10.10.10.1 255.255.255.0
+!
 interface GigabitEthernet0/0/0
  description DGW SRV1
  ip address 172.16.1.1 255.255.255.0
@@ -78,7 +81,11 @@ ip access-list extended DENY_SALES
  permit ip any any
 ip access-list extended DENY_OPERATIONS
  deny icmp 10.30.0.0 0.0.0.255 10.40.0.0 0.0.0.255 echo
- permit ip any any
+ deny tcp 10.30.0.0 0.0.0.255 host 10.20.0.1 eq 22
+ deny tcp 10.30.0.0 0.0.0.255 host 10.30.0.1 eq 22
+ deny tcp 10.30.0.0 0.0.0.255 host 10.40.0.1 eq 22
+ deny tcp 10.30.0.0 0.0.0.255 host 172.16.1.1 eq 22 
+permit ip any any
 !
 no cdp run
 !
