@@ -45,16 +45,43 @@
 ##### Откройте окно конфигурации
 ##### a.	На R1 используйте соответствующую команду show cdp, чтобы определить, сколько интерфейсов включено CDP, сколько из них включено и сколько отключено.
 ##### Результат выполнения команды sh cdp int:
-R1#sh cdp int
-Vlan1 is administratively down, line protocol is down
-  Sending CDP packets every 60 seconds
-  Holdtime is 180 seconds
-GigabitEthernet0/0/0 is administratively down, line protocol is down
-  Sending CDP packets every 60 seconds
-  Holdtime is 180 seconds
-GigabitEthernet0/0/1 is up, line protocol is up
-  Sending CDP packets every 60 seconds
-  Holdtime is 180 seconds
-GigabitEthernet0/0/2 is administratively down, line protocol is down
-  Sending CDP packets every 60 seconds
-  Holdtime is 180 seconds
+###### R1#sh cdp int
+###### Vlan1 is administratively down, line protocol is down
+######   Sending CDP packets every 60 seconds
+######   Holdtime is 180 seconds
+###### GigabitEthernet0/0/0 is administratively down, line protocol is down
+######   Sending CDP packets every 60 seconds
+######   Holdtime is 180 seconds
+###### GigabitEthernet0/0/1 is up, line protocol is up
+######   Sending CDP packets every 60 seconds
+######   Holdtime is 180 seconds
+###### GigabitEthernet0/0/2 is administratively down, line protocol is down
+######   Sending CDP packets every 60 seconds
+######   Holdtime is 180 seconds
+######  CDP включен на всех интерфейсах. Интерфейса Vlan 1, G0/0/0, G0/0/2 выключены, находятся в состоянии - administratively down.
+##### b. b.	На R1 используйте соответствующую команду show cdp, чтобы определить версию IOS, используемую на S1.
+##### Результат выполнения команды sh cdp entry S1:
+######  R1#sh cdp entry S1
+
+######  Device ID: S1
+######  Entry address(es): 
+######   IP address : 10.22.0.2
+######  Platform: cisco 2960, Capabilities: Switch
+######  Interface: GigabitEthernet0/0/1, Port ID (outgoing port): FastEthernet0/5
+######  Holdtime: 138
+######  
+######  Version :
+######  Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 15.0(2)SE4, RELEASE SOFTWARE (fc1)
+######  Technical Support: http://www.cisco.com/techsupport
+######  Copyright (c) 1986-2013 by Cisco Systems, Inc.
+######  Compiled Wed 26-Jun-13 02:49 by mnguyen
+######  
+######  advertisement version: 2
+######  Duplex: full
+#####  Версия IOS на S1: Version 15.0(2)SE4
+##### c.	На S1 используйте соответствующую команду show cdp, чтобы определить, сколько пакетов CDP было выданных- не поддерживается в СРТ.
+##### d.	Настройте SVI для VLAN 1 на S1 и S2, используя IP-адреса, указанные в таблице адресации выше. Настройте шлюз по умолчанию для каждого коммутатора на основе таблицы адресов-выполнены при первоначальной настройке, см. итоговые конф-ии в Часть 1, Шаг 3.
+##### e.	На R1 выполните команду show cdp entry S1. 
+##### Какие дополнительные сведения доступны?
+##### Доступна информация об IP-адресе SVI (10.22.0.2), IP-адресе управления (10.22.0.2)
+##### f.	Отключить CDP глобально на всех устройствах. 
