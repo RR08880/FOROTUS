@@ -58,8 +58,8 @@
 ###### GigabitEthernet0/0/2 is administratively down, line protocol is down
 ######   Sending CDP packets every 60 seconds
 ######   Holdtime is 180 seconds
-######  CDP включен на всех интерфейсах. Интерфейса Vlan 1, G0/0/0, G0/0/2 выключены, находятся в состоянии - administratively down.
-##### b. b.	На R1 используйте соответствующую команду show cdp, чтобы определить версию IOS, используемую на S1.
+#####  CDP включен на всех интерфейсах. Интерфейса Vlan 1, G0/0/0, G0/0/2 выключены, находятся в состоянии - administratively down.
+##### b.	На R1 используйте соответствующую команду show cdp, чтобы определить версию IOS, используемую на S1.
 ##### Результат выполнения команды sh cdp entry S1:
 ######  R1#sh cdp entry S1
 
